@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>인지중학교 실습 계정 안내</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+      background-color: #f8fafc;
+      color: #1e293b;
+      padding: 24px 16px;
+    }
+    .container {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+    header {
+      background: white;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    header h1 {
+      font-size: 22px;
+      margin-bottom: 8px;
+      color: #0f172a;
+    }
+    header p {
+      font-size: 14px;
+      color: #64748b;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 14px;
+    }
+    .card {
+      background: white;
+      border: 1px solid #e2e8f0;
+      border-radius: 10px;
+      padding: 14px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.03);
+    }
+    .card-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 10px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid #f1f5f9;
+    }
+    .num-tag {
+      font-size: 16px;
+      font-weight: 700;
+      color: #2563eb;
+    }
+    .sub-tag {
+      font-size: 12px;
+      color: #94a3b8;
+    }
+    .field {
+      margin-bottom: 8px;
+    }
+    .field:last-child {
+      margin-bottom: 0;
+    }
+    .field label {
+      display: block;
+      font-size: 11px;
+      font-weight: 600;
+      color: #64748b;
+      margin-bottom: 3px;
+    }
+    .input-box {
+      display: flex;
+      gap: 6px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 7px 10px;
+      font-size: 13px;
+      border: 1px solid #cbd5e1;
+      border-radius: 6px;
+      background-color: #f8fafc;
+      color: #0f172a;
+      font-family: monospace;
+      outline: none;
+    }
+    input[type="text"]:focus {
+      border-color: #2563eb;
+      background-color: #eff6ff;
+    }
+    button {
+      padding: 0 12px;
+      background: #2563eb;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 12px;
+      font-weight: 600;
+      cursor: pointer;
+      white-space: nowrap;
+    }
+    button:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>인지중학교 AI 실습 계정 안내</h1>
+      <p>본인 번호 칸의 [복사] 버튼을 누르거나, 텍스트 상자를 클릭 후 <strong>Ctrl + C</strong>로 복사하세요.</p>
+    </header>
+
+    <div class="grid">
+      <!-- 1번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">1번</span><span class="sub-tag">학생 01</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_197@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 2번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">2번</span><span class="sub-tag">학생 02</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_198@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 3번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">3번</span><span class="sub-tag">학생 03</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_199@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 4번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">4번</span><span class="sub-tag">학생 04</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_200@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 5번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">5번</span><span class="sub-tag">학생 05</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_201@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 6번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">6번</span><span class="sub-tag">학생 06</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_202@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 7번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">7번</span><span class="sub-tag">학생 07</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_203@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 8번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">8번</span><span class="sub-tag">학생 08</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_204@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 9번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">9번</span><span class="sub-tag">학생 09</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_205@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 10번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">10번</span><span class="sub-tag">학생 10</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_206@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 11번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">11번</span><span class="sub-tag">학생 11</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_207@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 12번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">12번</span><span class="sub-tag">학생 12</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_208@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 13번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">13번</span><span class="sub-tag">학생 13</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_209@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 14번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">14번</span><span class="sub-tag">학생 14</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_210@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 15번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">15번</span><span class="sub-tag">학생 15</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_211@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 16번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">16번</span><span class="sub-tag">학생 16</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_212@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 17번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">17번</span><span class="sub-tag">학생 17</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_213@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 18번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">18번</span><span class="sub-tag">학생 18</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_214@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 19번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">19번</span><span class="sub-tag">학생 19</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_215@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 20번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">20번</span><span class="sub-tag">학생 20</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_216@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 21번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">21번</span><span class="sub-tag">학생 21</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_217@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 22번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">22번</span><span class="sub-tag">학생 22</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_218@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 23번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">23번</span><span class="sub-tag">학생 23</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_219@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 24번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">24번</span><span class="sub-tag">학생 24</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_220@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 25번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">25번</span><span class="sub-tag">학생 25</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_221@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 26번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">26번</span><span class="sub-tag">학생 26</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_222@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 27번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">27번</span><span class="sub-tag">학생 27</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_223@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+      <!-- 28번 -->
+      <div class="card">
+        <div class="card-header"><span class="num-tag">28번</span><span class="sub-tag">학생 28</span></div>
+        <div class="field"><label>아이디</label><div class="input-box"><input type="text" value="pnu_224@iceu.kr" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+        <div class="field"><label>비밀번호</label><div class="input-box"><input type="text" value="asd123!@#" readonly onclick="this.select()"><button onclick="copy(this)">복사</button></div></div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    function copy(btn) {
+      const input = btn.previousElementSibling;
+      input.select();
+      input.setSelectionRange(0, 99999); // 모바일 지원
+
+      if (navigator.clipboard && window.isSecureContext) {
+        navigator.clipboard.writeText(input.value);
+      } else {
+        document.execCommand('copy');
+      }
+
+      const origText = btn.innerText;
+      btn.innerText = '완료!';
+      btn.style.backgroundColor = '#16a34a';
+      setTimeout(() => {
+        btn.innerText = origText;
+        btn.style.backgroundColor = '#2563eb';
+      }, 1200);
+    }
+  </script>
+</body>
+</html>
